@@ -1,369 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>THARUNAM CSSX | Low Price Website Developer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>THARUNAM CSSX</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#080B16;
-color:white;
-overflow-x:hidden;
-}
-
-/* Navigation */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-position:fixed;
-width:100%;
-background:rgba(0,0,0,.45);
-backdrop-filter:blur(15px);
-z-index:999;
-}
-
-.logo{
-font-size:32px;
-font-weight:700;
-color:#00e5ff;
-letter-spacing:2px;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00e5ff;
-}
-
-/* Hero */
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(8,11,22,.85),rgba(8,11,22,.95)),
-url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:70px;
-color:#00e5ff;
-animation:fade 1.5s;
-}
-
-.hero h2{
-font-size:28px;
-margin-top:15px;
-font-weight:400;
-}
-
-.hero p{
-max-width:750px;
-margin:auto;
-margin-top:20px;
-line-height:1.8;
-color:#ccc;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:16px 40px;
-background:#00e5ff;
-color:#000;
-font-weight:700;
-border-radius:40px;
-text-decoration:none;
-transition:.4s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 30px #00e5ff;
-}
-
-/* Section */
-
-section{
-padding:90px 8%;
-}
-
-.title{
-font-size:42px;
-text-align:center;
-margin-bottom:50px;
-color:#00e5ff;
-}
-
-/* Cards */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#12192f;
-padding:35px;
-border-radius:18px;
-transition:.4s;
-border:1px solid rgba(255,255,255,.08);
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 25px #00e5ff55;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#00e5ff;
-}
-
-.card p{
-color:#ccc;
-line-height:1.7;
-}
-
-/* Stats */
-
-.stats{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:40px;
-margin-top:60px;
-}
-
-.stat{
-background:#12192f;
-padding:30px;
-border-radius:15px;
-min-width:180px;
-text-align:center;
-}
-
-.stat h2{
-font-size:40px;
-color:#00e5ff;
-}
-
-.stat p{
-margin-top:10px;
-color:#bbb;
-}
-
-/* Contact */
-
-.contact{
-text-align:center;
-}
-
-.contact h2{
-font-size:38px;
-margin-bottom:20px;
-color:#00e5ff;
-}
-
-.contact p{
-color:#ccc;
-margin-bottom:25px;
-}
-
-.insta{
-display:inline-block;
-padding:15px 35px;
-background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-border-radius:50px;
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:.4s;
-}
-
-.insta:hover{
-transform:scale(1.08);
-}
-
-footer{
-background:#05070d;
-padding:25px;
-text-align:center;
-color:#aaa;
-margin-top:70px;
-}
-
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
+body{overflow-x:hidden;color:#fff;background:#050816}
+body:before,body:after{content:'';position:fixed;width:40vw;height:40vw;border-radius:50%;filter:blur(80px);z-index:-1}
+body:before{background:#00d4ff44;left:-10vw;top:-10vw}body:after{background:#7b61ff44;right:-10vw;bottom:-10vw}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:18px 8%;backdrop-filter:blur(14px);background:#0a102880}
+.logo{font-size:34px;font-weight:900;letter-spacing:2px}.logo span{color:#00d4ff}
+nav a{color:#fff;text-decoration:none;margin:0 16px}
+.hero{height:100vh;display:grid;place-items:center;text-align:center;padding:0 10%}
+.hero h1{font-size:clamp(48px,8vw,92px);line-height:1}.hero h1 span{background:linear-gradient(90deg,#00d4ff,#7b61ff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:760px;margin:24px auto;color:#d8d8d8;font-size:20px}
+.btn{display:inline-block;padding:16px 34px;border-radius:50px;background:linear-gradient(90deg,#00d4ff,#7b61ff);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 0 30px #00d4ff55}
+.sec{padding:90px 8%}h2{text-align:center;font-size:42px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#ffffff10;border:1px solid #ffffff20;border-radius:22px;padding:28px;backdrop-filter:blur(18px);transition:.4s}
+.card:hover{transform:translateY(-12px) rotateX(6deg);box-shadow:0 20px 40px #00d4ff33}
+footer{text-align:center;padding:40px;background:#0005}
+small{color:#ccc}
+</style></head><body>
+<header><div class='logo'>THARUNAM <span>CSSX</span></div><nav><a href='#'>Home</a><a href='#services'>Services</a><a href='#contact'>Contact</a></nav></header>
+<section class='hero'>
+<div><h1>Affordable <span>Website Developer</span></h1><p>Premium business websites in Gudivada with modern UI, responsive design, fast performance and affordable pricing.</p><a class='btn' href='#contact'>Get Your Website</a></div>
+</section>
+<section class='sec'><h2>Why Choose THARUNAM CSSX?</h2><div class='grid'>
+<div class='card'><h3>⚡ Fast Delivery</h3><p>Professional websites delivered quickly.</p></div>
+<div class='card'><h3>🎨 Premium Design</h3><p>Modern glassmorphism, gradients and animations.</p></div>
+<div class='card'><h3>📱 Responsive</h3><p>Perfect on phones, tablets and desktops.</p></div>
+<div class='card'><h3>💰 Low Price</h3><p>Quality websites at affordable prices.</p></div>
+</div></section>
+<section class='sec' id='services'><h2>Services</h2><div class='grid'>
+<div class='card'>Restaurant Websites</div><div class='card'>Hotel Websites</div><div class='card'>Business Websites</div><div class='card'>Portfolio Websites</div></div></section>
+<section class='sec' id='contact'><h2>Contact</h2><div class='card'><p>📍 Gudivada</p><p>📧 tharunuu12@gmail.com</p><p>📷 <a style='color:#00d4ff' href='https://www.instagram.com/tharuntharun0960?igsh=OWt2YjRtZWdzeW9j'>Instagram</a></p></div></section>
+<footer><h3>THARUNAM CSSX</h3><small>©2026 All Rights Reserved</small></footer>
+<script>
+document.addEventListener('mousemove',e=>{document.body.style.backgroundPosition=(e.clientX/50)+'px '+(e.clientY/50)+'px';});
+</script>
+<style>
+body::before{animation:aurora 18s linear infinite;}
+@keyframes aurora{0%{transform:translateX(-5%) rotate(0)}50%{transform:translateX(5%) rotate(8deg)}100%{transform:translateX(-5%) rotate(0)}}
+#loader{position:fixed;inset:0;background:#050816;display:grid;place-items:center;z-index:9999;font-size:2rem}
+#trail,#glow{position:fixed;pointer-events:none;border-radius:50%}
+#glow{width:180px;height:180px;background:radial-gradient(circle,#00d4ff55,transparent 70%);transform:translate(-50%,-50%)}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px 18px;border-radius:50px;text-decoration:none;box-shadow:0 0 20px #25D366;animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+.card{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.star{position:fixed;width:2px;height:2px;background:white;border-radius:50%;animation:twinkle 2s infinite}
+@keyframes twinkle{50%{opacity:.2;transform:scale(.3)}}
 </style>
-
-</head>
-<body>
-
-<nav>
-
-<div class="logo">THARUNAM CSSX</div>
-
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-<div class="hero">
-
-<div>
-
-<h1>THARUNAM CSSX</h1>
-
-<h2>Professional Website Developer</h2>
-
-<p>
-
-Affordable websites for Shops, Restaurants, Businesses,
-Schools and Personal Brands.
-
-Beautiful Design • Mobile Friendly • Fast Delivery •
-Low Price
-
-Serving clients in <b>Gudivada</b> and across India.
-
-</p>
-
-<a href="#contact" class="btn">Get Your Website</a>
-
-</div>
-
-</div>
-
-<section id="services">
-
-<h2 class="title">My Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Business Websites</h3>
-<p>Create professional websites for your business with modern design and responsive layout.</p>
-</div>
-
-<div class="card">
-<h3>Restaurant Websites</h3>
-<p>Digital menu, WhatsApp ordering, Google Maps integration and beautiful food galleries.</p>
-</div>
-
-<div class="card">
-<h3>Portfolio Websites</h3>
-<p>Personal websites for students, freelancers and professionals.</p>
-</div>
-
-<div class="card">
-<h3>Website Redesign</h3>
-<p>Transform your old website into a modern, fast and attractive website.</p>
-</div>
-
-</div>
-
-<div class="stats">
-
-<div class="stat">
-<h2>₹999+</h2>
-<p>Website Starting Price</p>
-</div>
-
-<div class="stat">
-<h2>24/7</h2>
-<p>Customer Support</p>
-</div>
-
-<div class="stat">
-<h2>100%</h2>
-<p>Responsive Design</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>Let's Build Your Website</h2>
-
-<p>
-
-Need a professional website at an affordable price?
-
-Contact THARUNAM CSSX today.
-
-</p>
-
-<a class="btn" href="mailto:tharunuu12@gmail.com">📧 Email Me</a>
-
-<br><br><br>
-
-<a class="insta" href="https://www.instagram.com/tharuntharun0960?igsh=OWt2YjRtZWdzeW9j" target="_blank">
-Follow on Instagram
-</a>
-
-<p style="margin-top:40px;">
-📍 Gudivada, Andhra Pradesh
-</p>
-
-<p>
-📧 tharunuu12@gmail.com
-</p>
-
-</section>
-
-<footer>
-
-© 2026 THARUNAM CSSX • Professional Website Developer • Gudivada
-
-</footer>
-
-</body>
-</html>
+<div id='loader'>THARUNAM CSSX</div><div id='glow'></div><canvas id='fx' style='position:fixed;inset:0;z-index:-2'></canvas><a class='whatsapp' href='https://wa.me/916302890489?text=Hello%20THARUNAM%20CSSX!%20I%20want%20to%20build%20a%20website.'>WhatsApp</a>
+<script>
+window.addEventListener('load',()=>setTimeout(()=>loader.remove(),1200));
+for(let i=0;i<180;i++){let s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*2+'s';document.body.appendChild(s);}
+const g=document.getElementById('glow');onmousemove=e=>{g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';};
+const c=document.getElementById('fx'),x=c.getContext('2d');function r(){c.width=innerWidth;c.height=innerHeight}r();onresize=r;let p=[...Array(250)].map(()=>({x:Math.random()*c.width,y:Math.random()*c.height,v:1+Math.random()*2}));
+(function a(){x.clearRect(0,0,c.width,c.height);x.fillStyle='#66e0ff';p.forEach(o=>{o.y+=o.v;if(o.y>c.height)o.y=0;x.beginPath();x.arc(o.x,o.y,1.5,0,7);x.fill();});requestAnimationFrame(a)})();
+document.querySelectorAll('.card').forEach(el=>el.onmousemove=e=>{let r=el.getBoundingClientRect();let rx=(e.clientY-r.top-r.height/2)/12,ry=(r.width/2-(e.clientX-r.left))/12;el.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg) translateY(-8px)`;});document.querySelectorAll('.card').forEach(el=>el.onmouseleave=()=>el.style.transform='');
+</script>
+</body></html>
